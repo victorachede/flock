@@ -200,7 +200,7 @@ function Nav() {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10"
          style={{ background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(12px)' }}>
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="font-display text-white text-xl tracking-tight"
+        <span className="text-white text-xl tracking-tight"
               style={{ fontWeight: 800, letterSpacing: '-0.03em' }}>
           Flock
         </span>
@@ -231,7 +231,7 @@ function Hero() {
       {/* Large ghost text — atmosphere */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none select-none overflow-hidden"
            aria-hidden="true">
-        <span className="font-display text-white/[0.03] leading-none block"
+        <span className="text-white/[0.03] leading-none block"
               style={{ fontSize: 'clamp(8rem, 18vw, 22rem)', fontWeight: 900, letterSpacing: '-0.04em' }}>
           FLOCK
         </span>
@@ -245,7 +245,7 @@ function Hero() {
             Ministry Administration
           </p>
 
-          <h1 className="font-display text-white leading-none mb-6"
+          <h1 className="text-white leading-none mb-6"
               style={{
                 fontWeight: 900,
                 fontSize: 'clamp(2.75rem, 6.5vw, 5rem)',
@@ -264,12 +264,12 @@ function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="mailto:victor@asktc.live?subject=Flock Demo Request&body=Hi Victor, I'd like to learn more about Flock for our church."
-               className="inline-flex items-center justify-center px-8 py-4 bg-white text-black font-display transition-all hover:bg-white/90 active:scale-95"
+               className="inline-flex items-center justify-center px-8 py-4 bg-white text-black transition-all hover:bg-white/90 active:scale-95"
                style={{ fontWeight: 700, fontSize: '0.9375rem', letterSpacing: '-0.01em' }}>
               Request a Demo
             </a>
             <a href="#how-it-works"
-               className="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white/60 font-display transition-all hover:border-white/40 hover:text-white"
+               className="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white/60 transition-all hover:border-white/40 hover:text-white"
                style={{ fontWeight: 600, fontSize: '0.9375rem' }}>
               See how it works
             </a>
@@ -314,7 +314,7 @@ function Problem() {
              style={{ fontWeight: 600 }}>
             The Problem
           </p>
-          <h2 className="font-display text-black leading-tight"
+          <h2 className="text-black leading-tight"
               style={{ fontWeight: 800, fontSize: 'clamp(1.75rem, 4vw, 2.75rem)', letterSpacing: '-0.03em' }}>
             Church leadership is flying blind on branch performance.
           </h2>
@@ -323,7 +323,7 @@ function Problem() {
         <div className="grid md:grid-cols-3 gap-px bg-black/10">
           {items.map((item, i) => (
             <div key={i} className="bg-white p-8">
-              <p className="font-display text-black font-700 text-base mb-4 leading-snug"
+              <p className="text-black font-700 text-base mb-4 leading-snug"
                  style={{ fontWeight: 700 }}>
                 {item.q}
               </p>
@@ -367,7 +367,7 @@ function HowItWorks() {
                style={{ fontWeight: 600 }}>
               How it works
             </p>
-            <h2 className="font-display text-white leading-tight mb-12"
+            <h2 className="text-white leading-tight mb-12"
                 style={{ fontWeight: 800, fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', letterSpacing: '-0.03em' }}>
               Built around the structure you already have.
             </h2>
@@ -375,12 +375,12 @@ function HowItWorks() {
             <div className="space-y-10">
               {steps.map((step, i) => (
                 <div key={i} className="flex gap-6">
-                  <div className="flex-shrink-0 text-white/20 font-display text-3xl leading-none select-none"
+                  <div className="flex-shrink-0 text-white/20 text-3xl leading-none select-none"
                        style={{ fontWeight: 900 }}>
                     {String(i + 1).padStart(2, '0')}
                   </div>
                   <div>
-                    <p className="font-display text-white font-700 mb-2" style={{ fontWeight: 700 }}>
+                    <p className="text-white font-700 mb-2" style={{ fontWeight: 700 }}>
                       {step.role}
                     </p>
                     <p className="text-white/40 text-sm leading-relaxed mb-2">{step.action}</p>
@@ -410,7 +410,7 @@ function HowItWorks() {
                 { label: 'Reports filed', val: '11/12' },
               ].map((s, i) => (
                 <div key={i}>
-                  <p className="font-display text-white text-xl font-800 leading-none mb-1"
+                  <p className="text-white text-xl font-800 leading-none mb-1"
                      style={{ fontWeight: 800 }}>
                     {s.val}
                   </p>
@@ -463,7 +463,7 @@ function Features() {
                style={{ fontWeight: 600 }}>
               What's included
             </p>
-            <h2 className="font-display text-black leading-tight"
+            <h2 className="text-black leading-tight"
                 style={{ fontWeight: 800, fontSize: 'clamp(1.75rem, 4vw, 2.75rem)', letterSpacing: '-0.03em' }}>
               Everything a church needs.<br />Nothing it doesn't.
             </h2>
@@ -476,7 +476,7 @@ function Features() {
             <div key={i} className="bg-white p-8">
               {/* Thin top rule as visual identity */}
               <div className="w-6 h-0.5 bg-black mb-6" />
-              <p className="font-display text-black font-700 mb-3" style={{ fontWeight: 700 }}>
+              <p className="text-black font-700 mb-3" style={{ fontWeight: 700 }}>
                 {f.title}
               </p>
               <p className="text-black/40 text-sm leading-relaxed">{f.body}</p>
@@ -495,7 +495,7 @@ function CTA() {
       <div className="max-w-5xl mx-auto">
         <div className="border border-white/10 p-12 md:p-16 flex flex-col md:flex-row md:items-end justify-between gap-10">
           <div className="max-w-lg">
-            <h2 className="font-display text-white leading-tight mb-4"
+            <h2 className="text-white leading-tight mb-4"
                 style={{ fontWeight: 900, fontSize: 'clamp(2rem, 4.5vw, 3rem)', letterSpacing: '-0.04em' }}>
               Start with your group.<br />
               <span style={{ color: 'rgba(255,255,255,0.3)' }}>Scale to your state.</span>
@@ -507,7 +507,7 @@ function CTA() {
           </div>
           <div className="flex-shrink-0">
             <a href="mailto:victor@asktc.live?subject=Flock Demo Request&body=Hi Victor, I'd like to learn more about Flock for our church."
-               className="inline-flex items-center justify-center px-10 py-4 bg-white text-black font-display transition-all hover:bg-white/90 active:scale-95 whitespace-nowrap"
+               className="inline-flex items-center justify-center px-10 py-4 bg-white text-black transition-all hover:bg-white/90 active:scale-95 whitespace-nowrap"
                style={{ fontWeight: 700, fontSize: '0.9375rem' }}>
               Request a Demo
             </a>
@@ -524,7 +524,7 @@ function Footer() {
     <footer className="bg-black py-10 px-6 border-t border-white/5">
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
-          <span className="font-display text-white text-lg" style={{ fontWeight: 800 }}>Flock</span>
+          <span className="text-white text-lg" style={{ fontWeight: 800 }}>Flock</span>
           <p className="text-white/20 text-xs mt-1">Church administration infrastructure</p>
         </div>
         <p className="text-white/15 text-xs">Built by Black Sheep Co. · Makurdi, Nigeria</p>
