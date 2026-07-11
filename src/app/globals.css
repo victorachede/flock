@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 248 249 252;
+    --foreground: 8 15 37;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-brand-surface text-navy-900 antialiased;
+  }
+}
+
+@layer utilities {
+  .stat-card {
+    @apply bg-white rounded-xl border border-navy-100 p-5 shadow-sm;
+  }
+}
